@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"liudongpu"=>"liudongpu@hotmail.com"}
   s.homepage = "https://github.com/uhutu/IrnLib"
   s.description = "TODO: Add long description of the pod here."
+  s.requires_arc = true
   s.source = { :path => '.' }
 
   s.ios.deployment_target    = '9.0'

@@ -1,5 +1,7 @@
 PODS:
-  - IrnLib (0.1.0)
+  - IrnLib (0.1.0):
+    - IrnLib/Core (= 0.1.0)
+  - IrnLib/Core (0.1.0)
 
 DEPENDENCIES:
   - IrnLib (from `../`)
@@ -9,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IrnLib: e661afee19a4494b857b67646cf35f9b8521006a
+  IrnLib: 0371531a263af47f01980dfccb344aaec727d011
 
-PODFILE CHECKSUM: aafd2bc8eb4ba67cd178cbe0e87e70aad9d536f4
+PODFILE CHECKSUM: 2dc392d1fe6b37cb0b95122dbccdbf42f4c28257
 
 COCOAPODS: 1.5.3

@@ -27,3 +27,9 @@ liudongpu, liudongpu@hotmail.com
 ## License
 
 IrnLib is available under the MIT license. See the LICENSE file for more info.
+
+
+## 初始化
+`cd nodes&&npm install`
+
+

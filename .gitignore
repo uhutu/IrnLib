@@ -35,3 +35,9 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 # Pods/
+
+
+
+node_modules
+yarn.lock
+package-lock.json

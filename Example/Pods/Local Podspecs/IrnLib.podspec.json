@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of IrnLib.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/liudongpu/IrnLib",
+  "homepage": "https://github.com/uhutu/IrnLib",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,58 @@
     "liudongpu": "liudongpu@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/liudongpu/IrnLib.git",
+    "git": "https://github.com/uhutu/IrnLib.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "IrnLib/Classes/**/*"
+  "source_files": "IrnLib/Classes/**/*",
+  "default_subspecs": "Core",
+  "requires_arc": true,
+  "pod_target_xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++14"
+  },
+  "preserve_paths": [
+    "package.json",
+    "LICENSE",
+    "LICENSE-docs"
+  ],
+  "cocoapods_version": ">= 1.2.0",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "React/**/*.{c,h,m,mm,S,cpp}",
+      "exclude_files": [
+        "**/__tests__/*",
+        "IntegrationTests/*",
+        "React/DevSupport/*",
+        "React/Inspector/*",
+        "ReactCommon/yoga/*",
+        "React/Cxx*/*",
+        "React/Fabric/**/*"
+      ],
+      "ios": {
+        "exclude_files": "React/**/RCTTV*.*"
+      },
+      "tvos": {
+        "exclude_files": [
+          "React/Modules/RCTClipboard*",
+          "React/Views/RCTDatePicker*",
+          "React/Views/RCTPicker*",
+          "React/Views/RCTRefreshControl*",
+          "React/Views/RCTSlider*",
+          "React/Views/RCTSwitch*",
+          "React/Views/RCTWebView*"
+        ]
+      },
+      "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1",
+      "header_dir": "React",
+      "frameworks": "JavaScriptCore",
+      "libraries": "stdc++",
+      "pod_target_xcconfig": {
+        "HEADER_SEARCH_PATHS": "\"$(PODS_TARGET_SRCROOT)/ReactCommon\""
+      }
+    }
+  ]
 }
