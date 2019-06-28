@@ -1,0 +1,6 @@
+framework module IrnLib {
+  umbrella header "IrnLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

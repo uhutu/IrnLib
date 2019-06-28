@@ -1,0 +1,22 @@
+{
+  "name": "IrnLib",
+  "version": "0.1.0",
+  "summary": "A short description of IrnLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liudongpu/IrnLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liudongpu": "liudongpu@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/liudongpu/IrnLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IrnLib/Classes/**/*"
+}
